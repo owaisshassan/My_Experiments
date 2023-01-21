@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+
+.container {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    border: 1px solid green;
+}
+.spinner{
+    animation: spin 20s alternate;
+    background: none;
+    height: 50px;
+    pointer-events: none;
+    transform-origin: 25px;
+    width: 50px;
+    border: 1px solid rgb(233, 232, 239);
+}
+
+
+.spinner > p{
+    border-radius:calc(100%);
+    background-color: black;
+    width: 50px;
+    color: aliceblue;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: translateX(-160px) translateY(-160px);
+    /* border: 1px solid rgb(0, 115, 128); */
+}
+
+@keyframes spin {
+    to {
+        transform: rotateX(360deg);
+    }
+    
+}
+
+.floor{
+    margin-top: 36%;
+    margin-left: 33%;
+    width: 300px;
+    height: 25px;
+    background-color: aqua;
+}
